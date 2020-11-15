@@ -1,0 +1,40 @@
+<Client>
+	<ServerPort>3333</ServerPort>
+	<main>
+	
+		<scn/>
+		<ip/>
+		<s>ip, ServerPort</s>
+		<dis>s.getInputStream()</dis>
+		<dos>s.getOutputStream()</dos>
+		
+		<sendMessage>Thread</sendMessage>
+		<run>
+			<while>
+			<try>
+			<messaggio/>
+				<!-- dos.writeUTF(messaggio) -->
+			</try>
+			<catch>
+				<!-- e.printStackTrace() -->
+			</catch>
+			</while>
+		</run>
+		
+		
+		<readMessage>Thread</readMessage>
+		<run>
+			<while>
+			<messaggio/>
+			<try>
+				<messaggio>dis.readUTF()</messaggio>
+			</try>
+			<catch>
+				<!-- e.printStackTrace() -->
+			</catch>
+			</while>
+		</run>
+		<!-- sendMessage.start() --> 
+        <!-- readMessage.start() --> 
+	</main>
+</Client>

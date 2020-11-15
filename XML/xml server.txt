@@ -1,0 +1,65 @@
+<?xml version="1.0">
+
+<Server>
+	<i>0</i>
+	<lc>
+		<>
+		<>
+	</lc>
+	<main>
+		<ss>3333</ss>
+		<dis>s.getInputStream()</dis>
+		<dos>s.getOutputStream()</dos>
+		<ch>s,"Client" + i, dis, dos</ch>
+		<t>thread(ch)</t>
+	</main>
+</Server>
+
+<ClientHandler>
+	<name/>
+	<dis/>
+	<dos/>
+	<s/>
+	<login>
+	<ClientHandler>
+		<login>true</login>
+	</ClientHandler>
+	
+	<run>
+		<ricevuta/>
+		<while>
+			<try>
+				<ricevuta>dis.readUTF()</ricevuta>
+				<if>
+					<login>false</login>
+					<!-- s.close() -->
+				</if>
+				
+				<st/>
+				<for>
+					<if>
+						<!-- mc.dos.writeUTF(ricevuta) -->
+					</if>
+			
+			
+				</for>
+			</try>
+			<catch>
+				<!-- e.printStackTrace() -->
+			</catch>
+			
+		
+		</while>
+		<try>
+			<!-- this.dis.close() -->
+			<!-- this.dos.close() -->
+		</try>
+		<catch>
+			<!-- e.printStackTrace() -->
+		</catch>
+	
+	
+	
+	</run>
+	
+</ClientHandler>

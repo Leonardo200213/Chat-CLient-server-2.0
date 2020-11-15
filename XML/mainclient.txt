@@ -1,0 +1,6 @@
+<mainclient>
+	<main>
+		<c/>
+		c.main
+	</main>
+</mainclient>

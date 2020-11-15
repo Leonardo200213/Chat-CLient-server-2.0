@@ -1,0 +1,6 @@
+<mainserver>
+	<main>
+		<ser/>
+		ser.main
+	</main>
+</mainserver>
